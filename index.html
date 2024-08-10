@@ -20,11 +20,11 @@
         <div>
             <ul id="navbar">
                 <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#" id="lg-bag"><i class="fa fa-shopping-bag"></i></a></li>
+                <li><a href="#feature">Shop</a></li>
+                <li><a href="#sm-banner">Offer</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#newsletter">Contact Us</a></li>
+                <li><a href="cart.html" id="lg-bag"><i class="fa fa-shopping-bag"></i></a></li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </div>
@@ -71,37 +71,33 @@
         <h2>Featured Products</h2>
         <p>Summer Collection New Modern Design</p>
         <div class="pro-container">
-        <div class="pro">
-            <img src="img/products/f1.jpg" alt="">
-            <div class="des">
-                <span>adidas</span>
-                <h5>Cartoon Astronaut T-Shirts</h5>
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+            <div class="pro" id="prod1">
+                <img src="img/products/f1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Trendsetter</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                    </div>
+                    <h4>$78</h4>
                 </div>
-                <h4>$78</h4>
-            </div>
-            <a href="#">
-                <i class="fa fa-shopping-cart cart"></i>
-            </a>
-        </div>
+                <a href="#" class="cart-button">
+                    <i class="fa fa-shopping-cart cart"></i>
+                </a>
+            </div>   
         <div class="pro">
             <img src="img/products/f2.jpg" alt="">
             <div class="des">
                 <span>adidas</span>
-                <h5>Cartoon Astronaut T-Shirts</h5>
+                <h5>Artistic Expressions</h5>
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
                 </div>
-                <h4>$78</h4>
+                <h4>$50</h4>
             </div>
             <a href="#">
                 <i class="fa fa-shopping-cart cart"></i>
@@ -111,15 +107,14 @@
             <img src="img/products/f3.jpg" alt="">
             <div class="des">
                 <span>adidas</span>
-                <h5>Cartoon Astronaut T-Shirts</h5>
+                <h5>Classic Crew Neck</h5>
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
                 </div>
-                <h4>$78</h4>
+                <h4>$60</h4>
             </div>
             <a href="#">
                 <i class="fa fa-shopping-cart cart"></i>
@@ -137,7 +132,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <h4>$78</h4>
+                <h4>$90</h4>
             </div>
             <a href="#">
                 <i class="fa fa-shopping-cart cart"></i>
@@ -147,15 +142,15 @@
             <img src="img/products/f5.jpg" alt="">
             <div class="des">
                 <span>adidas</span>
-                <h5>Cartoon Astronaut T-Shirts</h5>
+                <h5>Graphic Tees
+                </h5>
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
                 </div>
-                <h4>$78</h4>
+                <h4>$65</h4>
             </div>
             <a href="#">
                 <i class="fa fa-shopping-cart cart"></i>
@@ -165,15 +160,14 @@
             <img src="img/products/f6.jpg" alt="">
             <div class="des">
                 <span>adidas</span>
-                <h5>Cartoon Astronaut T-Shirts</h5>
+                <h5>Retro Rewind</h5>
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
                 </div>
-                <h4>$100</h4>
+                <h4>$40</h4>
             </div>
             <a href="#">
                 <i class="fa fa-shopping-cart cart"></i>
@@ -189,9 +183,8 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
                 </div>
-                <h4>$50</h4>
+                <h4>$60</h4>
             </div>
             <a href="#">
                 <i class="fa fa-shopping-cart cart"></i>
@@ -207,7 +200,6 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
                 </div>
                 <h4>$50</h4>
             </div>
@@ -216,6 +208,25 @@
             </a>
         </div>
     </div>
+    <div class="overlay" id="overlay"></div>
+            <div class="detail-card" id="detail-card">
+                <div class="detail-content">
+                    <span class="close-card">&times;</span>
+                    <div class="detail-image-section">
+                        <img src="" id="detail-image" alt="">
+                    </div>
+                    <div class="detail-info-section">
+                        <h3 id="detail-title"></h3>
+                        <span id="detail-brand"></span>
+                        <div class="star-detail" id="detail-rating">
+                            
+                        </div>
+                        <h4 id="detail-price"></h4>
+                        <p id="detail-description">Description of the product.</p>
+                        <button class="add-to-cart" id="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
     </section>
     <section id="banner" class="section-m1">
         <h4>Repiar Service</h4>
@@ -230,7 +241,7 @@
             <img src="img/products/n1.jpg" alt="">
             <div class="des">
                 <span>adidas</span>
-                <h5>Cartoon Astronaut Shirts</h5>
+                <h5>Elegant Dress Shirt</h5>
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -238,7 +249,7 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <h4>$78</h4>
+                <h4>$100</h4>
             </div>
             <a href="#">
                 <i class="fa fa-shopping-cart cart"></i>
@@ -248,15 +259,13 @@
             <img src="img/products/n2.jpg" alt="">
             <div class="des">
                 <span>adidas</span>
-                <h5>Cartoon Astronaut Shirts</h5>
+                <h5>Classic Button-Down</h5>
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
                 </div>
-                <h4>$78</h4>
+                <h4>$50</h4>
             </div>
             <a href="#">
                 <i class="fa fa-shopping-cart cart"></i>
@@ -266,15 +275,14 @@
             <img src="img/products/n3.jpg" alt="">
             <div class="des">
                 <span>adidas</span>
-                <h5>Cartoon Astronaut Shirts</h5>
+                <h5>Summer Splash</h5>
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
                 </div>
-                <h4>$78</h4>
+                <h4>$75</h4>
             </div>
             <a href="#">
                 <i class="fa fa-shopping-cart cart"></i>
@@ -284,15 +292,14 @@
             <img src="img/products/n4.jpg" alt="">
             <div class="des">
                 <span>adidas</span>
-                <h5>Cartoon Astronaut T-Shirts</h5>
+                <h5>Bold Patterns</h5>
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
                 </div>
-                <h4>$78</h4>
+                <h4>$75</h4>
             </div>
             <a href="#">
                 <i class="fa fa-shopping-cart cart"></i>
@@ -302,15 +309,14 @@
             <img src="img/products/n5.jpg" alt="">
             <div class="des">
                 <span>adidas</span>
-                <h5>Cartoon Astronaut Shirts</h5>
+                <h5>Business Casual</h5>
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
                 </div>
-                <h4>$78</h4>
+                <h4>$80</h4>
             </div>
             <a href="#">
                 <i class="fa fa-shopping-cart cart"></i>
@@ -325,10 +331,8 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
                 </div>
-                <h4>$78</h4>
+                <h4>$60</h4>
             </div>
             <a href="#">
                 <i class="fa fa-shopping-cart cart"></i>
@@ -338,15 +342,14 @@
             <img src="img/products/n7.jpg" alt="">
             <div class="des">
                 <span>adidas</span>
-                <h5>Cartoon Astronaut Shirts</h5>
+                <h5>Lightweight Linen</h5>
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
                 </div>
-                <h4>$78</h4>
+                <h4>$75</h4>
             </div>
             <a href="#">
                 <i class="fa fa-shopping-cart cart"></i>
@@ -412,7 +415,7 @@
     </section>
     <footer class="section-p1">
         <div class="col" id="logo">
-            <img src="https://i.ibb.co/kDVwgwp/logo.png" alt="">
+            <img src="img/logo.png" alt="">
             <h4>Contact</h4>
             <p><strong>Address: </strong>344 Gurudev , Kanpur Nager , Uttar Pradesh India</p>
             <p><strong>Phone: </strong>+919753489415 / 06378945216</p>
@@ -455,7 +458,7 @@
             <img src="img/pay/pay.png" alt="">
         </div>
         <div class="copyright">
-            <p>@ 2023 , Shubham Dwivedi - HTML CSS JS Ecommerce Template</p>
+            <p>&copy; 2024 MyShop. All rights reserved.</p>
         </div>
     </footer>
 
