@@ -32,6 +32,7 @@ document.querySelectorAll('.pro').forEach(item => {
         document.getElementById('detail-rating').innerHTML = '<i class="fas fa-star"></i>'.repeat(rating);
         document.getElementById('detail-price').innerText = price;
         document.getElementById('detail-description').innerText = description;
+        
     });
 });
 
@@ -82,6 +83,19 @@ document.addEventListener('DOMContentLoaded', () => {
             // Optionally, show a confirmation message and close the detail card
             document.getElementById('overlay').style.display = 'none';
             document.getElementById('detail-card').style.display = 'none';
+            Toastify({
+                text: "Item added to cart",
+                duration: 3000,
+               
+                close: true,
+                gravity: "bottom", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                  background: "linear-gradient(to right, #ff6f61, #ff6f61)",
+                },
+                onClick: function(){} // Callback after click
+              }).showToast();
         });
     }
 

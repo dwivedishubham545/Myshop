@@ -108,9 +108,11 @@ header {
     margin-top: 20px;
     text-align: center;
 }
+
 @media (max-width: 600px) {
     .cart-item {
         width: 100%;
         margin: 10px 0;
     }
 }
+

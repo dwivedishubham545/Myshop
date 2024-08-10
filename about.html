@@ -9,23 +9,76 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <style>
-         body {
+        body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
-        header {
-            background: #007BFF;
-            font-family: 'Kaushan Script', cursive;
-            color: #efeded;
-            padding: 10px 0;
-            text-align: center;
-            position: relative;
-        }
+        #header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: #fffefe;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#header img{
+    height: 50%;
+    width: 50%;
+}
+
+#navbar.active{
+    right: 0px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600px;
+    color: #1a1a1a;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: rgb(61, 197, 117);
+    transition: 0.3s ease;
+
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: rgb(61, 197, 117);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+        display: none;
+}
         .container {
-            width: 70%;
+            width: 90%; /* Changed from 70% to 90% for better mobile view */
             margin: auto;
             overflow: hidden;
         }
@@ -33,19 +86,19 @@
             color: #333;
         }
         .content {
-            padding: 30px;
+            padding: 20px; /* Reduced padding for better mobile view */
             background: #fff;
-            margin: 30px;
+            margin: 20px 0; /* Reduced margin for better mobile view */
             border-radius: 8px;
         }
         .team-member {
             margin: 20px 0;
             border-bottom: 1px solid #ddd;
-            padding-bottom: auto;
+            padding-bottom: 20px; /* Changed padding-bottom for consistency */
         }
         .team-member img {
-            width: 70px;
-            height: 70px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             float: left;
             margin-right: 20px;
@@ -59,14 +112,62 @@
             width: 100%;
             bottom: 0;
         }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            .team-member {
+                text-align: center;
+                margin: 10px 0; /* Reduced margin for better mobile view */
+            }
+            .team-member img {
+                width: 80px; /* Reduced image size for mobile */
+                height: 80px;
+                float: none;
+                margin: 0 auto 10px; /* Centered image and added margin below */
+            }
+            .container {
+                width: 95%; /* Increased container width for mobile */
+            }
+            .content {
+                padding: 15px; /* Further reduced padding for mobile */
+                text-align: center;
+            }
+            h2{
+                text-align: center;
+            }
+        }
+
+        /* Media Query for Smaller Mobile Devices */
+        @media (max-width: 480px) {
+            .team-member img {
+                width: 80px; /* Even smaller image size for very small screens */
+                height: 80px;
+            }
+            .content {
+                padding: 10px; /* Even further reduced padding for very small screens */
+            }
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div class="header">
-            <h1>About Us</h1>
+    <section id="header">
+        <a href="#"> <img src="img/logo.png" alt="" class="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html#feature">Shop</a></li>
+                <li><a href="index.html#sm-banner">Offer</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#newsletter">Contact Us</a></li>
+                <li><a href="cart.html" id="lg-bag"><i class="fa fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
         </div>
-    </header>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-shopping-bag"></i></a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
 
     <div class="container">
         <div class="content">
@@ -81,6 +182,7 @@
                 <img src="img/about/john_doe.png" alt="Team Member 1">
                 <h3>John Doe</h3>
                 <p>Founder & CEO</p>
+            </div>
             <div class="team-member">
                 <img src="img/about/jane_smith.png" alt="Team Member 2">
                 <h3>Jane Smith</h3>
